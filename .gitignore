@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.env
+.DS_Store
+coverage/
+*.local
+*.env.*
+/build
+/.vscode
+.idea/
+*.tgz
+package-lock.json
+yarn.lock
