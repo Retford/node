@@ -1,5 +1,5 @@
 import { SaveFile } from './save-file.use-case';
-import * as fs from 'fs';
+import fs from 'fs';
 
 describe('SaveFileUseCase', () => {
   const customOptions = {
@@ -70,7 +70,7 @@ describe('SaveFileUseCase', () => {
           throw new Error('This is a custom error message from testing');
         });
       const result = saveFile.execute(customOptions);
-      expect(result).toBeTruthy();
+      expect(result).toBeFalsy();
 
       writeFileSpy.mockRestore();
     });
